@@ -54,6 +54,16 @@ For client data, the default approach is rule-based/local processing. External A
 
 [See the Automation Quick Win offer](./AUTOMATION_SERVICES.md)
 
+## Public automation demos
+
+These public demos were built specifically for my portfolio using original code and synthetic data. They demonstrate the same kinds of automation patterns I work with professionally without exposing employer or client systems, data or internal logic.
+
+- [Multi-File Reconciliation](./portfolio-demos/multi-file-reconciliation/) — reconcile several operational datasets and surface exceptions
+- [Local Document Batch Processor](./portfolio-demos/document-batch-processor/) — validate high-volume document batches locally in the browser
+- [Browser Workflow Automation](./portfolio-demos/browser-workflow-automation/) — automate repetitive browser tasks with validation, retries and logs
+
+[Open all public demos](./portfolio-demos/)
+
 ## Currently building
 
 - Reusable approaches to process automation and workflow monitoring
