@@ -1,0 +1,9 @@
+OrderID,Customer,SKU,OrderedQty,UnitPrice
+ORD-1001,Northwind Cafe,SKU-A100,10,12.50
+ORD-1002,Blue Harbor Ltd,SKU-B205,8,22.00
+ORD-1003,Green Market,SKU-C310,15,6.40
+ORD-1004,Oak & Co,SKU-D440,5,48.00
+ORD-1005,River Foods,SKU-E501,20,4.25
+ORD-1006,Metro Parts,SKU-F620,7,31.00
+ORD-1007,Sunrise Retail,SKU-G710,12,9.75
+ORD-1008,Atlas Workshop,SKU-H880,3,120.00
