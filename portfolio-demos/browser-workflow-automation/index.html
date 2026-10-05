@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Mock Report Portal</title>
+  <style>
+    body{font-family:Arial,sans-serif;max-width:760px;margin:50px auto;padding:0 20px;color:#17212b}
+    .panel{border:1px solid #d7dee4;border-radius:10px;padding:22px}
+    label{display:block;margin:12px 0 5px}
+    select,input,button{font:inherit;padding:9px;width:100%;box-sizing:border-box}
+    button{margin-top:16px;cursor:pointer}
+    #status{margin-top:18px;padding:12px;background:#f3f6f8;border-radius:8px}
+    #history{margin-top:20px;font-family:monospace;white-space:pre-wrap}
+  </style>
+</head>
+<body>
+  <h1>Mock Report Portal</h1>
+  <p>Public demo page for browser workflow automation.</p>
+
+  <div class="panel">
+    <label for="environment">Environment</label>
+    <select id="environment">
+      <option>North</option>
+      <option>Central</option>
+      <option>South</option>
+    </select>
+
+    <label for="dateFrom">Date from</label>
+    <input id="dateFrom" type="date">
+
+    <label for="dateTo">Date to</label>
+    <input id="dateTo" type="date">
+
+    <button id="generateBtn">Generate report</button>
+
+    <div id="status" data-state="idle">Ready.</div>
+    <div id="history"></div>
+  </div>
+
+  <script>
+    const attempts = {};
+    const status = document.getElementById("status");
+    const history = document.getElementById("history");
+
+    document.getElementById("generateBtn").addEventListener("click", async () => {
+      const environment = document.getElementById("environment").value;
+      const dateFrom = document.getElementById("dateFrom").value;
+      const dateTo = document.getElementById("dateTo").value;
+
+      if (!dateFrom || !dateTo) {
+        setStatus("error", "Please select both dates.");
+        return;
+      }
+
+      attempts[environment] = (attempts[environment] || 0) + 1;
+      setStatus("working", `Generating ${environment} report...`);
+
+      await delay(700);
+
+      if (environment === "Central" && attempts[environment] === 1) {
+        setStatus("retryable", "Temporary service error. Please retry.");
+        appendHistory(`${environment}: temporary error on attempt 1`);
+        return;
+      }
+
+      setStatus("success", `${environment} report ready for ${dateFrom} to ${dateTo}.`);
+      appendHistory(`${environment}: completed on attempt ${attempts[environment]}`);
+    });
+
+    function setStatus(state, message) {
+      status.dataset.state = state;
+      status.textContent = message;
+    }
+
+    function appendHistory(line) {
+      history.textContent += line + "\n";
+    }
+
+    function delay(ms) {
+      return new Promise(resolve => setTimeout(resolve, ms));
+    }
+  </script>
+</body>
+</html>
