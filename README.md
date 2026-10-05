@@ -48,7 +48,9 @@ I am also open to selected, fixed-scope automation projects for small teams and 
 
 Typical problems: PDF → Excel, email attachments, report preparation, spreadsheet reconciliation, document processing and repetitive browser workflows.
 
-**Pilot projects start from 990 PLN.**
+For client data, the default approach is rule-based/local processing. External AI is optional and only used with the client's explicit approval and an agreed data-handling approach.
+
+**Introductory pilot projects start from 490 PLN for the first three clients.**
 
 [See the Automation Quick Win offer](./AUTOMATION_SERVICES.md)
 
