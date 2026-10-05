@@ -20,6 +20,7 @@ The goal is not to remove people from a process. It is to handle consistent, rul
 - Workflow monitoring and exception visibility
 - Invoice validation
 - AI-assisted extraction with human review
+- Excel, email and browser workflow automation
 
 ## Tools
 
@@ -32,13 +33,24 @@ The goal is not to remove people from a process. It is to handle consistent, rul
 - Smartsheet
 - AI-assisted document processing
 
-## Practical outcomes
+## Selected automation outcomes
 
-Depending on the process, these solutions have delivered outcomes such as:
+Anonymised examples from professional automation work:
 
-- Dozens of hours saved monthly
-- Multi-day processes reduced to hours
-- Solutions used by multiple colleagues
+- Repetitive operations follow-up reduced from about **4.5 h/day to 1.5 h/day**
+- High-volume document handling reduced from about **3 min/document to ~30 sec/document**
+- A recurring report-download task reduced from about **45 min/day to ~3.5 min/day**
+- Large spreadsheet reconciliation processes reduced from days of manual work to hours
+
+## Small automation projects
+
+I am also open to selected, fixed-scope automation projects for small teams and businesses.
+
+Typical problems: PDF → Excel, email attachments, report preparation, spreadsheet reconciliation, document processing and repetitive browser workflows.
+
+**Pilot projects start from 990 PLN.**
+
+[See the Automation Quick Win offer](./AUTOMATION_SERVICES.md)
 
 ## Currently building
 
@@ -46,7 +58,3 @@ Depending on the process, these solutions have delivered outcomes such as:
 - AI-assisted document workflows with validation and exception handling
 - Practical capability in AI adoption and digital transformation
 - Public examples that demonstrate business-focused automation without exposing confidential information
-
-## Portfolio & public projects
-
-Portfolio and public project links will be added here as they become available.
