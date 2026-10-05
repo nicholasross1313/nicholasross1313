@@ -1,0 +1,10 @@
+OrderID,Result,Notes
+ORD-1001,Matched,
+ORD-1002,Amount mismatch,Invoice amount differs from ordered quantity x unit price.
+ORD-1003,Quantity mismatch,Ordered shipped and billed quantities do not agree.
+ORD-1004,Missing warehouse record,No warehouse record found.
+ORD-1005,Missing billing record,No billing record found.
+ORD-1006,SKU mismatch,Order SKU and warehouse SKU are different.
+ORD-1007,Matched,
+ORD-1008,Matched,
+ORD-1009,Extra downstream record,Order ID exists outside the Orders source.
