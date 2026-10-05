@@ -4,6 +4,10 @@ I help small operations teams remove repetitive office work from Excel, email, P
 
 The focus is simple: find a task that is repeated every day or every week, measure the time it takes, and automate the repeatable part without turning it into a large IT project.
 
+## Data and AI
+
+External AI is not required for most projects. The default is to use rule-based or local processing where practical. Client documents are not sent to public AI services without explicit approval. If AI genuinely improves the solution, the data-handling model is agreed first and can use anonymised data or a client-approved internal model.
+
 ## Good fit
 
 Typical examples include:
@@ -21,7 +25,7 @@ Typical examples include:
 
 A small fixed-scope pilot for one repetitive process.
 
-**Pilot price: from 990 PLN**
+**Introductory pilot price: 490 PLN for the first three clients**
 
 Typical delivery includes:
 
