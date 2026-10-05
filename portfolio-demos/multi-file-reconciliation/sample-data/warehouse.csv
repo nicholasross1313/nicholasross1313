@@ -1,0 +1,9 @@
+OrderID,SKU,ShippedQty,WarehouseStatus
+ORD-1001,SKU-A100,10,Shipped
+ORD-1002,SKU-B205,8,Shipped
+ORD-1003,SKU-C310,12,Partial
+ORD-1005,SKU-E501,20,Shipped
+ORD-1006,SKU-X999,7,Shipped
+ORD-1007,SKU-G710,12,Shipped
+ORD-1008,SKU-H880,3,Shipped
+ORD-1009,SKU-Z900,2,Shipped
