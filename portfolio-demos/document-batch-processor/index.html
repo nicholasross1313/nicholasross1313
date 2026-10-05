@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Local Document Batch Processor</title>
+  <style>
+    body{font-family:Arial,sans-serif;max-width:1100px;margin:40px auto;padding:0 20px;color:#18222d}
+    h1{margin-bottom:8px}
+    .note{background:#f4f7f9;padding:14px 16px;border-radius:8px;margin:18px 0}
+    .controls{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}
+    button,input{font:inherit}
+    button{padding:10px 14px;cursor:pointer}
+    table{border-collapse:collapse;width:100%;font-size:14px}
+    th,td{border:1px solid #d9e0e5;padding:8px;text-align:left}
+    th{background:#eef3f6}
+    .ok{font-weight:700}
+    .issue{font-weight:700}
+    #summary{margin:14px 0;font-weight:700}
+  </style>
+</head>
+<body>
+  <h1>Local Document Batch Processor</h1>
+  <p>Validate document names, identify duplicates and missing pairs, and generate a rename mapping.</p>
+
+  <div class="note">
+    Privacy-first demo: document contents are not uploaded. Processing happens locally in your browser.
+  </div>
+
+  <div class="controls">
+    <input id="files" type="file" multiple>
+    <button id="sampleBtn">Load sample data</button>
+    <button id="exportBtn" disabled>Export CSV report</button>
+  </div>
+
+  <div id="summary">No documents loaded.</div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Original file</th>
+        <th>Type</th>
+        <th>Reference</th>
+        <th>Date</th>
+        <th>Proposed name</th>
+        <th>Status</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody id="results"></tbody>
+  </table>
+
+  <script src="app.js"></script>
+</body>
+</html>
